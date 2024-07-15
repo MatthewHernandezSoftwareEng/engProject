@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".pushup">
+    tools:context=".pushup"
+    android:background="@color/backgroundcolor">
 
     <ScrollView
         android:layout_width="wrap_content"
@@ -21,10 +22,12 @@
 
             <Button
                 android:id="@+id/tips2"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-
+                android:background="@color/button"
+                android:textColor="@color/white"
+                android:fontFamily="@font/pixel_font"
                 android:text="BACK TO TIPS PAGE"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -38,7 +41,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/blue1" />
+                app:srcCompat="@color/button" />
 
             <TextView
                 android:id="@+id/textView"
@@ -50,6 +53,7 @@
                 android:textAllCaps="true"
                 android:textColor="@color/white"
                 android:textSize="20sp"
+                android:fontFamily="@font/pixel_font"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -61,6 +65,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="15dp"
+                android:fontFamily="@font/pixel_font"
                 android:text="Starting Position:"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView15" />
@@ -68,6 +73,7 @@
             <TextView
                 android:id="@+id/textView46"
                 android:layout_width="350dp"
+                android:fontFamily="@font/pixel_font"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="15dp"
@@ -81,6 +87,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="15dp"
+                android:fontFamily="@font/pixel_font"
                 android:text="2. Core Engaged: Keep your core tight and your back flat. Your feet should be together and your toes on the ground. "
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView46" />
@@ -90,6 +97,7 @@
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
+                android:fontFamily="@font/pixel_font"
                 android:layout_marginTop="15dp"
                 android:text="Movement:"
                 app:layout_constraintStart_toStartOf="parent"
@@ -100,6 +108,7 @@
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
+                android:fontFamily="@font/pixel_font"
                 android:layout_marginTop="15dp"
                 android:text="3. Knee to Chest: Lift your right foot off the ground and drive your right knee towards your chest as far as you can. "
                 app:layout_constraintStart_toStartOf="parent"
@@ -111,6 +120,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="15dp"
+                android:fontFamily="@font/pixel_font"
                 android:text="4. Switch Legs: Quickly switch legs, bringing your right foot back to the starting position and simultaneously driving your left knee towards your chest. "
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView49" />
@@ -121,6 +131,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="15dp"
+                android:fontFamily="@font/pixel_font"
                 android:text="5. Repeat: Continue alternating legs in a running motion, keeping your movements quick and controlled. "
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView50" />

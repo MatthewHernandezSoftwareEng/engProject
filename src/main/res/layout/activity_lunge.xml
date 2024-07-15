@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".pushup">
+    tools:context=".pushup"
+    android:background="@color/backgroundcolor">
 
     <ScrollView
         android:layout_width="wrap_content"
@@ -21,9 +22,13 @@
 
             <Button
                 android:id="@+id/tips4"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/button"
                 android:text="BACK TO TIPS PAGE"
+                android:textColor="@color/white"
+                android:fontFamily="@font/pixel_font"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -36,12 +41,13 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/blue1" />
+                app:srcCompat="@color/button" />
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
+                android:fontFamily="@font/pixel_font"
                 android:text="how to do a lunge"
                 android:textAlignment="center"
                 android:textAllCaps="true"
@@ -56,6 +62,7 @@
                 android:id="@+id/textView15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/pixel_font"
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="10dp"
                 android:text="Starting Position:"
@@ -66,6 +73,7 @@
                 android:id="@+id/textView16"
                 android:layout_width="380dp"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/pixel_font"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="10dp"
                 android:text="1. Stand Upright: Stand with your feet hip-width apart, keeping your shoulders back and your core engaged."
@@ -76,6 +84,7 @@
                 android:id="@+id/textView17"
                 android:layout_width="380dp"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/pixel_font"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="10dp"
                 android:text="2. Hands Placement: Place your hands on your hips or let them hang naturally at your sides."
@@ -95,6 +104,7 @@
             <TextView
                 android:id="@+id/textView18"
                 android:layout_width="wrap_content"
+                android:fontFamily="@font/pixel_font"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="90dp"
@@ -104,9 +114,10 @@
 
             <TextView
                 android:id="@+id/textView19"
-                android:layout_width="380dp"
+                android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
+                android:fontFamily="@font/pixel_font"
                 android:layout_marginTop="10dp"
                 android:text="3. Step Forward: Take a step forward with your right foot. The length of your step will determine the difficulty of the lunge; a longer step works more on the glutes and hamstrings, while a shorter step targets the quadriceps."
                 app:layout_constraintStart_toStartOf="parent"
@@ -114,7 +125,8 @@
 
             <TextView
                 android:id="@+id/textView20"
-                android:layout_width="370dp"
+                android:layout_width="350dp"
+                android:fontFamily="@font/pixel_font"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="10dp"
@@ -137,6 +149,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
+                android:fontFamily="@font/pixel_font"
                 android:layout_marginTop="10dp"
                 android:text="5. Return to starting position and repeat."
                 app:layout_constraintStart_toStartOf="parent"

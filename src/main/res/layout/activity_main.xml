@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".pushup">
+    tools:context=".pushup"
+    android:background="@color/backgroundcolor">
 
     <ScrollView
         android:layout_width="wrap_content"
@@ -21,95 +22,119 @@
 
             <Button
                 android:id="@+id/pushup_button"
-                android:layout_width="197dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@color/button"
                 android:text="How to do a Pushup"
                 android:textAllCaps="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+                app:layout_constraintTop_toBottomOf="@+id/imageView15"
+                android:fontFamily="@font/pixel_font"/>
 
             <Button
                 android:id="@+id/squat_button"
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:background="@color/button"
                 android:gravity="center"
+                android:textColor="@color/white"
                 android:text="How to do a squat"
                 android:textAllCaps="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.497"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/pushup_button" />
+                app:layout_constraintTop_toBottomOf="@+id/pushup_button"
+                android:fontFamily="@font/pixel_font"/>
 
             <Button
                 android:id="@+id/plank_button"
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:background="@color/button"
+                android:textColor="@color/white"
                 android:text="how to do a plank"
                 android:textAllCaps="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/squat_button" />
+                app:layout_constraintTop_toBottomOf="@+id/squat_button"
+                android:fontFamily="@font/pixel_font"/>
 
             <Button
                 android:id="@+id/jumpjack_button"
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:background="@color/button"
                 android:text="how to do a jumping jack"
                 android:textAllCaps="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/plank_button" />
+                app:layout_constraintTop_toBottomOf="@+id/plank_button"
+                android:fontFamily="@font/pixel_font"/>
 
             <Button
                 android:id="@+id/lunge_button"
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:background="@color/button"
                 android:text="how to do a lunge"
+                android:textColor="@color/white"
                 android:textAllCaps="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/jumpjack_button" />
+                app:layout_constraintTop_toBottomOf="@+id/jumpjack_button"
+                android:fontFamily="@font/pixel_font"/>
 
             <Button
                 android:id="@+id/highknee_button"
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:background="@color/button"
                 android:text="how to do high knees"
+                android:textColor="@color/white"
                 android:textAllCaps="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/situp_button" />
+                app:layout_constraintTop_toBottomOf="@+id/situp_button"
+                android:fontFamily="@font/pixel_font"/>
 
             <Button
                 android:id="@+id/situp_button"
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
+                android:background="@color/button"
                 android:layout_marginTop="20dp"
+                android:textColor="@color/white"
                 android:text="how to do a sit up"
                 android:textAllCaps="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/lunge_button" />
+                app:layout_constraintTop_toBottomOf="@+id/lunge_button"
+                android:fontFamily="@font/pixel_font"/>
 
             <Button
                 android:id="@+id/calfraise_button"
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:background="@color/button"
+                android:textColor="@color/white"
                 android:text="how to do mountain climbers"
                 android:textAllCaps="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/highknee_button" />
+                app:layout_constraintTop_toBottomOf="@+id/highknee_button"
+                android:fontFamily="@font/pixel_font"/>
 
             <ImageView
                 android:id="@+id/imageView15"
@@ -118,7 +143,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/blue1" />
+                app:srcCompat="@color/button" />
 
             <TextView
                 android:id="@+id/textView"
@@ -133,7 +158,8 @@
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:fontFamily="@font/pixel_font"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 

@@ -7,15 +7,10 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-import java.util.ArrayList;
-import java.util.List;
+import android.widget.Button;
+import android.widget.Toast;
 
 public class WorkoutsFragment extends Fragment {
-
-    private RecyclerView recyclerView;
-    private List<Workout> workoutList;
 
     public WorkoutsFragment() {
         // Required empty public constructor
@@ -27,21 +22,47 @@ public class WorkoutsFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_workouts, container, false);
 
-        // Initialize RecyclerView
-        recyclerView = view.findViewById(R.id.workouts_recycler_view);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        // Set up button click listeners
+        Button buttonPushups = view.findViewById(R.id.button_pushups);
+        Button buttonSitups = view.findViewById(R.id.button_situps);
+        Button buttonSquats = view.findViewById(R.id.button_squats);
+        Button buttonLunges = view.findViewById(R.id.button_lunges);
 
-        // Prepare workout data
-        workoutList = new ArrayList<>();
-        workoutList.add(new Workout("Push-ups", "A basic upper body exercise"));
-        workoutList.add(new Workout("Sit-ups", "An abdominal exercise to strengthen the core"));
-        workoutList.add(new Workout("Squats", "A lower body exercise for legs and glutes"));
-        workoutList.add(new Workout("Lunges", "A lower body exercise targeting the legs and glutes"));
+        buttonPushups.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onWorkoutButtonClick("Push-ups");
+            }
+        });
 
-        // Set up RecyclerView adapter
-        WorkoutAdapter adapter = new WorkoutAdapter(workoutList);
-        recyclerView.setAdapter(adapter);
+        buttonSitups.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onWorkoutButtonClick("Sit-ups");
+            }
+        });
+
+        buttonSquats.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onWorkoutButtonClick("Squats");
+            }
+        });
+
+        buttonLunges.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onWorkoutButtonClick("Lunges");
+            }
+        });
 
         return view;
+    }
+
+    private void onWorkoutButtonClick(String workoutName) {
+        String message = workoutName + " selected";
+        Toast.makeText(getContext(), message, Toast.LENGTH_SHORT).show();
+
+        // You can add more functionality here based on the selected workout
     }
 }

@@ -2,22 +2,53 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Workouts Fragment"
-        android:layout_alignParentTop="true"
-        android:textSize="24sp"
-        android:textColor="@android:color/black" />
+    <!-- Button for Push-ups -->
+    <Button
+        android:id="@+id/button_pushups"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:text="Push-ups"
+        android:textSize="16sp"
+        android:drawableTop="@drawable/ic_workout_1"
+        android:onClick="onWorkoutButtonClick" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/workouts_recycler_view"
-        android:layout_alignParentTop="true"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="16dp" />
+    <!-- Button for Sit-ups -->
+    <Button
+        android:id="@+id/button_situps"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/button_pushups"
+        android:layout_marginTop="16dp"
+        android:text="Sit-ups"
+        android:textSize="16sp"
+        android:drawableTop="@drawable/ic_workout_2"
+        android:onClick="onWorkoutButtonClick" />
+
+    <!-- Button for Squats -->
+    <Button
+        android:id="@+id/button_squats"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/button_situps"
+        android:layout_marginTop="16dp"
+        android:text="Squats"
+        android:textSize="16sp"
+        android:drawableTop="@drawable/ic_workout_3"
+        android:onClick="onWorkoutButtonClick" />
+
+    <!-- Button for Lunges -->
+    <Button
+        android:id="@+id/button_lunges"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/button_squats"
+        android:layout_marginTop="16dp"
+        android:text="Lunges"
+        android:textSize="16sp"
+        android:drawableTop="@drawable/ic_workout_4"
+        android:onClick="onWorkoutButtonClick" />
 
 </RelativeLayout>

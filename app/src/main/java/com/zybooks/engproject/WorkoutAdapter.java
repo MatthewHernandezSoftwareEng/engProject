@@ -3,6 +3,7 @@ package com.zybooks.engproject;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -20,32 +21,32 @@ public class WorkoutAdapter extends RecyclerView.Adapter<WorkoutAdapter.WorkoutV
     @Override
     public WorkoutViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_workout, parent, false);
+                .inflate(R.layout.item_workout_button_1, parent, false);
         return new WorkoutViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull WorkoutViewHolder holder, int position) {
         Workout workout = workoutList.get(position);
-        holder.workoutName.setText(workout.getName());
-        holder.workoutDescription.setText(workout.getDescription());
+        holder.workoutTitle.setText(workout.getName());
+        // If your Workout class has an image resource ID, uncomment the next line and set it appropriately
+        // holder.workoutImage.setImageResource(workout.getImageResourceId());
     }
 
     @Override
     public int getItemCount() {
-        return workoutList == null ? 0 : workoutList.size();
-
+        return workoutList.size();
     }
 
     public static class WorkoutViewHolder extends RecyclerView.ViewHolder {
 
-        TextView workoutName;
-        TextView workoutDescription;
+        ImageView workoutImage;
+        TextView workoutTitle;
 
         public WorkoutViewHolder(View itemView) {
             super(itemView);
-            workoutName = itemView.findViewById(R.id.workout_name);
-            workoutDescription = itemView.findViewById(R.id.workout_description);
+            workoutImage = itemView.findViewById(R.id.workout_image);
+            workoutTitle = itemView.findViewById(R.id.workout_title);
         }
     }
 }

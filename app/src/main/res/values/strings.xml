@@ -13,4 +13,8 @@
     <string name="bw2select">Basic Workout 2 Selected</string>
     <string name="bw3select">Basic Workout 3 Selected</string>
     <string name="bw4select">Basic Workout 4 Selected</string>
+    <string name="bw1_welcome">Welcome to Basic Workout 1!</string>
+    <string name="bw2_welcome">Welcome to Basic Workout 2!</string>
+    <string name="bw3_welcome">Welcome to Basic Workout 3!</string>
+    <string name="bw4_welcome">Welcome to Basic Workout 4!</string>
 </resources>

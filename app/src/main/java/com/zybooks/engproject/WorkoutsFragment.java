@@ -1,8 +1,15 @@
 package com.zybooks.engproject;
 
+import static androidx.appcompat.content.res.AppCompatResources.getDrawable;
+
+import android.app.Dialog;
+import android.content.Context;
+import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.annotation.UiContext;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -40,7 +47,7 @@ public class WorkoutsFragment extends Fragment {
         imgButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onWorkoutButtonClick("Basic Workout 1");
+                Intent i = new Intent(getApplicationContext(), PopActivity.class);
             }
         });
 
@@ -66,6 +73,14 @@ public class WorkoutsFragment extends Fragment {
         });
 
         return view;
+    }
+
+    private Drawable getDrawable(int popupBg) {
+        return null;
+    }
+
+    private Context getApplicationContext() {
+        return null;
     }
 
     private void onWorkoutButtonClick(String workoutName) {

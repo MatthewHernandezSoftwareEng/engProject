@@ -12,6 +12,8 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 import android.widget.PopupWindow;
 import android.view.MotionEvent;
+import android.view.Gravity;
+import android.widget.LinearLayout;
 
 public class WorkoutsFragment extends Fragment {
 

@@ -9,8 +9,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Welcome to Your App!"
+        android:fontStyle="@font/pixelify_sans_bold"
         android:textSize="24sp"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
+        android:shadowColor="@color/black"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="8"
         android:layout_marginTop="16dp"/>
 
     <Button
@@ -18,6 +23,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Go to Workouts"
+        android:fontStyle="@font/pixelify_sans_bold"
+        android:background="@color/emerald_green"
         android:layout_marginTop="16dp"/>
 
     <!-- Add more UI elements as needed -->

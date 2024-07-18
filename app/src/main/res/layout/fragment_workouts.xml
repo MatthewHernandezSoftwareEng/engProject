@@ -1,54 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center">
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
 
-    <!-- Button for Push-ups -->
-    <Button
-        android:id="@+id/button_pushups"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="16dp"
-        android:text="Push-ups"
-        android:textSize="16sp"
-        android:drawableTop="@drawable/ic_workout_1"
-        android:onClick="onWorkoutButtonClick" />
+        <TextView android:id="@+id/workouts_title"
+            android:text="@string/workouts_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16sp"
+            android:textSize="32sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/pixelify_sans_bold"
+            android:shadowColor="@color/black"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="8"/>
+        <ImageButton
+            android:id="@+id/basic_workout_1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/bw1"
+            android:fontFamily="@font/pixelify_sans_bold"
+            android:textSize="16sp"
+            android:src="@drawable/ic_workout_1"
+            android:padding="8dp"
+            android:onClick="onWorkoutButtonClick"
+            android:scaleType="fitCenter"/>
 
-    <!-- Button for Sit-ups -->
-    <Button
-        android:id="@+id/button_situps"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_below="@id/button_pushups"
-        android:layout_marginTop="16dp"
-        android:text="Sit-ups"
-        android:textSize="16sp"
-        android:drawableTop="@drawable/ic_workout_2"
-        android:onClick="onWorkoutButtonClick" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bw1"
+            android:textSize="24sp"
+            android:fontFamily="@font/pixelify_sans_semibold"
+            android:shadowColor="@color/black"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="8"/>
 
-    <!-- Button for Squats -->
-    <Button
-        android:id="@+id/button_squats"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_below="@id/button_situps"
-        android:layout_marginTop="16dp"
-        android:text="Squats"
-        android:textSize="16sp"
-        android:drawableTop="@drawable/ic_workout_3"
-        android:onClick="onWorkoutButtonClick" />
+        <ImageButton
+            android:id="@+id/basic_workout_2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/bw2"
+            android:fontFamily="@font/pixelify_sans_bold"
+            android:textSize="16sp"
+            android:src="@drawable/ic_workout_2"
+            android:padding="8dp"
+            android:onClick="onWorkoutButtonClick"
+            android:scaleType="fitCenter"/>
 
-    <!-- Button for Lunges -->
-    <Button
-        android:id="@+id/button_lunges"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_below="@id/button_squats"
-        android:layout_marginTop="16dp"
-        android:text="Lunges"
-        android:textSize="16sp"
-        android:drawableTop="@drawable/ic_workout_4"
-        android:onClick="onWorkoutButtonClick" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bw2"
+            android:textSize="24sp"
+            android:fontFamily="@font/pixelify_sans_semibold"
+            android:shadowColor="@color/black"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="8"/>
 
-</RelativeLayout>
+        <ImageButton
+            android:id="@+id/basic_workout_3"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_workout_3"
+            android:padding="8dp"
+            android:onClick="onWorkoutButtonClick"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bw3"
+            android:textSize="24sp"
+            android:fontFamily="@font/pixelify_sans_semibold"
+            android:shadowColor="@color/black"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="8"/>
+
+        <ImageButton
+            android:id="@+id/basic_workout_4"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/bw4"
+            android:fontFamily="@font/pixelify_sans_bold"
+            android:textSize="16sp"
+            android:src="@drawable/ic_workout_4"
+            android:padding="8dp"
+            android:onClick="onWorkoutButtonClick"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bw4"
+            android:textSize="24sp"
+            android:fontFamily="@font/pixelify_sans_semibold"
+            android:shadowColor="@color/black"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="8"/>
+
+    </LinearLayout>
+</ScrollView>

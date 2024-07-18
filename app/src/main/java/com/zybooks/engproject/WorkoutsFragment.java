@@ -8,7 +8,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
+import android.widget.PopupWindow;
+import android.view.MotionEvent;
 
 public class WorkoutsFragment extends Fragment {
 
@@ -16,6 +19,10 @@ public class WorkoutsFragment extends Fragment {
         // Required empty public constructor
     }
 
+    ImageButton imgButton1;
+    ImageButton imgButton2;
+    ImageButton imgButton3;
+    ImageButton imgButton4;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -23,36 +30,36 @@ public class WorkoutsFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_workouts, container, false);
 
         // Set up button click listeners
-        Button buttonPushups = view.findViewById(R.id.button_pushups);
-        Button buttonSitups = view.findViewById(R.id.button_situps);
-        Button buttonSquats = view.findViewById(R.id.button_squats);
-        Button buttonLunges = view.findViewById(R.id.button_lunges);
+        imgButton1 = (ImageButton) view.findViewById(R.id.basic_workout_1);
+        imgButton2 = (ImageButton) view.findViewById(R.id.basic_workout_2);
+        imgButton3 = (ImageButton) view.findViewById(R.id.basic_workout_3);
+        imgButton4 = (ImageButton) view.findViewById(R.id.basic_workout_4);
 
-        buttonPushups.setOnClickListener(new View.OnClickListener() {
+        imgButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onWorkoutButtonClick("Push-ups");
+                onWorkoutButtonClick("Basic Workout 1");
             }
         });
 
-        buttonSitups.setOnClickListener(new View.OnClickListener() {
+        imgButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onWorkoutButtonClick("Sit-ups");
+                onWorkoutButtonClick("Basic Workout 2");
             }
         });
 
-        buttonSquats.setOnClickListener(new View.OnClickListener() {
+        imgButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onWorkoutButtonClick("Squats");
+                onWorkoutButtonClick("Basic Workout 3");
             }
         });
 
-        buttonLunges.setOnClickListener(new View.OnClickListener() {
+        imgButton4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onWorkoutButtonClick("Lunges");
+                onWorkoutButtonClick("Basic Workout 4");
             }
         });
 
@@ -60,7 +67,7 @@ public class WorkoutsFragment extends Fragment {
     }
 
     private void onWorkoutButtonClick(String workoutName) {
-        String message = workoutName + " selected";
+        String message = workoutName + " Selected";
         Toast.makeText(getContext(), message, Toast.LENGTH_SHORT).show();
 
         // You can add more functionality here based on the selected workout

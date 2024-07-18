@@ -35,9 +35,7 @@ public class MainActivity extends AppCompatActivity {
                     System.out.println(Integer.parseInt(usertext.getText().toString()));
                     temp.clock_display = clock_display;
                     temp.runTimer();
-                    if (temp.count == 0) button.setActivated(false);
                 }
-                else {
                     button.setActivated(true);
 }
             }

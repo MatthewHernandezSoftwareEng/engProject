@@ -30,10 +30,10 @@ public class WorkoutsFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_workouts, container, false);
 
         // Set up button click listeners
-        imgButton1 = (ImageButton) view.findViewById(R.id.basic_workout_1);
-        imgButton2 = (ImageButton) view.findViewById(R.id.basic_workout_2);
-        imgButton3 = (ImageButton) view.findViewById(R.id.basic_workout_3);
-        imgButton4 = (ImageButton) view.findViewById(R.id.basic_workout_4);
+        imgButton1 = view.findViewById(R.id.basic_workout_1);
+        imgButton2 = view.findViewById(R.id.basic_workout_2);
+        imgButton3 = view.findViewById(R.id.basic_workout_3);
+        imgButton4 = view.findViewById(R.id.basic_workout_4);
 
         imgButton1.setOnClickListener(new View.OnClickListener() {
             @Override

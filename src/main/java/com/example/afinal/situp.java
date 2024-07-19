@@ -28,7 +28,7 @@ public class situp extends AppCompatActivity {
         one.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(situp.this, MainActivity.class);
+                Intent intent = new Intent(situp.this, Tips_Activity.class);
                 startActivity(intent);
             }
         });

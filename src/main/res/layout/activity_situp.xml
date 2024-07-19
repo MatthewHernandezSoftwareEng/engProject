@@ -25,7 +25,7 @@
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:fontFamily="@font/pixel_font"
+                android:fontFamily="@font/pixelify_sans_regular"
                 android:text="BACK TO TIPS PAGE"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -37,7 +37,7 @@
             <ImageView
                 android:id="@+id/imageView15"
                 android:layout_width="416dp"
-                android:fontFamily="@font/pixel_font"
+                android:fontFamily="@font/pixelify_sans_regular"
                 android:layout_height="100dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -46,7 +46,7 @@
 
             <TextView
                 android:id="@+id/textView"
-                android:fontFamily="@font/pixel_font"
+                android:fontFamily="@font/pixelify_sans_regular"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
@@ -62,7 +62,7 @@
 
             <TextView
                 android:id="@+id/textView27"
-                android:fontFamily="@font/pixel_font"
+                android:fontFamily="@font/pixelify_sans_regular"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
@@ -74,7 +74,7 @@
             <TextView
                 android:id="@+id/textView29"
                 android:layout_width="350dp"
-                android:fontFamily="@font/pixel_font"
+                android:fontFamily="@font/pixelify_sans_regular"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="15dp"
@@ -85,7 +85,7 @@
             <TextView
                 android:id="@+id/textView30"
                 android:layout_width="350dp"
-                android:fontFamily="@font/pixel_font"
+                android:fontFamily="@font/pixelify_sans_regular"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="15dp"
@@ -106,7 +106,7 @@
             <TextView
                 android:id="@+id/textView31"
                 android:layout_width="wrap_content"
-                android:fontFamily="@font/pixel_font"
+                android:fontFamily="@font/pixelify_sans_regular"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="40dp"
@@ -117,7 +117,7 @@
             <TextView
                 android:id="@+id/textView32"
                 android:layout_width="350dp"
-                android:fontFamily="@font/pixel_font"
+                android:fontFamily="@font/pixelify_sans_regular"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="15dp"
@@ -127,7 +127,7 @@
 
             <TextView
                 android:id="@+id/textView33"
-                android:fontFamily="@font/pixel_font"
+                android:fontFamily="@font/pixelify_sans_regular"
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
@@ -139,7 +139,7 @@
             <TextView
                 android:id="@+id/textView34"
                 android:layout_width="350dp"
-                android:fontFamily="@font/pixel_font"
+                android:fontFamily="@font/pixelify_sans_regular"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="15dp"
@@ -162,7 +162,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
-                android:fontFamily="@font/pixel_font"
+                android:fontFamily="@font/pixelify_sans_regular"
                 android:layout_marginTop="15dp"
                 android:text="6. Return to starting position by slowly laying back down."
                 app:layout_constraintStart_toStartOf="parent"

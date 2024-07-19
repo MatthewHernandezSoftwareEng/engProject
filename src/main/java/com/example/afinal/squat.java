@@ -28,7 +28,7 @@ public class squat extends AppCompatActivity {
         one.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(squat.this, MainActivity.class);
+                Intent intent = new Intent(squat.this, Tips_Activity.class);
                 startActivity(intent);
             }
         });

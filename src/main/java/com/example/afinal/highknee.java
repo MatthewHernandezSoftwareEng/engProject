@@ -28,7 +28,7 @@ public class highknee extends AppCompatActivity {
         one.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(highknee.this, MainActivity.class);
+                Intent intent = new Intent(highknee.this, Tips_Activity.class);
                 startActivity(intent);
             }
         });

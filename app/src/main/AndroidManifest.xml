@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.zybooks.engproject">
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -13,6 +12,38 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity><activity
+            android:name=".calfraise"
+            android:exported="false" />
+        <activity
+            android:name=".situp"
+            android:exported="false" />
+        <activity
+            android:name=".highknee"
+            android:exported="false" />
+        <activity
+            android:name=".lunge"
+            android:exported="false" />
+        <activity
+            android:name=".jumpingjacks"
+            android:exported="false" />
+        <activity
+            android:name=".plank"
+            android:exported="false" />
+        <activity
+            android:name=".squat"
+            android:exported="false" />
+        <activity
+            android:name=".pushup"
+            android:exported="false" />
+        <activity
+            android:name=".Tips_Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

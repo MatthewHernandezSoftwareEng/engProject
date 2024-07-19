@@ -62,6 +62,8 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation("androidx.recyclerview:recyclerview:1.2.1")
     implementation(libs.material)
+    implementation(libs.androidx.navigation.runtime)
+    implementation(libs.androidx.navigation.ui)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

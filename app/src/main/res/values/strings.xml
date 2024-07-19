@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">QuestFit App</string>
-    <string name="bw1">Basic Workout 1</string>
-    <string name="bw2">Basic Workout 2</string>
-    <string name="bw3">Basic Workout 3</string>
-    <string name="bw4">Basic Workout 4</string>
-    <string name="workouts_title">Choose Your Challenge!</string>
+    <string name="bw1">Toning Focused Challenge</string>
+    <string name="bw2">Bulking Focused Challenge</string>
+    <string name="bw3">Cardio Only Challenge</string>
+    <string name="bw4">Body Weight Only Challenge</string>
+    <string name="workouts_title">Choose Your Quest!</string>
     <string name="home">Home</string>
     <string name="workouts">Workouts</string>
     <string name="tips">Tips</string>
@@ -18,4 +18,28 @@
     <string name="bw3_welcome">Welcome to Basic Workout 3!</string>
     <string name="bw4_welcome">Welcome to Basic Workout 4!</string>
     <string name="pixel_ribbon">Pixel Ribbon Medal</string>
+    <string name="close">CLose</string>
+    <string name="basic_workout_1_title">Are You Ready To Level Up?</string>
+    <string name="basic_workout_2_title">Time To Go Beast Mode!</string>
+    <string name="basic_workout_3_title">Are You Ready To Run?</string>
+    <string name="basic_workout_4_title">Are You Up To The Challenge?</string>
+    <string name="basic_workout_1_description">The goal of this challenge is to focus on toning your muscles through higher reps at a lower weight.
+    You will begin with 12 dumbbell bicep curls at 60% of your one rep max. Do this for 3 sets with a 1 minute break in between. Next, complete 3 sets
+    of 12 tricep dips with a 1 minute break in between. After that, complete 3 sets of 12 shoulder presses with a 1 minute break in between. </string>
+    <string name="basic_workout_2_description">The goal of this challenge is to focus on building muscle mass. ALl exercises should have a 2 minute break
+    between sets. Complete 3 sets of 6 barbell bench presses at 80% of your one rep max. Next, you should complete 3 sets of 6 reps of squats at 80% of
+    your one rep max. After that, you should complete 3 sets of 6 reps of barbell shoulder presses at 80% of your one rep max. Finally, you should
+    complete 3 sets of 6 reps of deadlifts at 80% body weight.</string>
+    <string name="basic_workout_3_description">This challenge focuses on cardio training. You will begin with 5 minutes of light running. Then, for
+    5 minutes you will run at a moderate pace. After that, you will run as hard as you can for 1 minute. Next, you will run at a moderate pace again for
+    5 minutes. Finally, you will run for 5 minutes at a light pace and end with 2 minutes of walking for a cooldown.</string>
+    <string name="basic_workout_4_description">This challenge focuses on body weight exercises. You will begin by doing three sets of push-ups
+        for 30 seconds with a 1 minute break between sets. Then, you will do three sets of squats for 30 seconds with a 1 minute break between sets.
+        After, you will do three sets of sit-ups for 30 seconds with a 1 minute break between sets. Finally, you will finish with 10 minutes
+        on the Stairmaster at no less than 3 speed.</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="workout">Enter the time you want to workout in minutes</string>
+    <string name="start_workout">Start Workout</string>
 </resources>

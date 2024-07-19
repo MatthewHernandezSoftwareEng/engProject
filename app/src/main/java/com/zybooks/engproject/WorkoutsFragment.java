@@ -1,26 +1,15 @@
 package com.zybooks.engproject;
 
-import static androidx.appcompat.content.res.AppCompatResources.getDrawable;
-
-import android.app.Dialog;
 import android.content.Context;
-import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.annotation.UiContext;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.Toast;
 import android.widget.PopupWindow;
-import android.view.MotionEvent;
+import android.widget.TextView;
 import android.view.Gravity;
-import android.widget.LinearLayout;
 
 public class WorkoutsFragment extends Fragment {
 
@@ -32,6 +21,7 @@ public class WorkoutsFragment extends Fragment {
     ImageButton imgButton2;
     ImageButton imgButton3;
     ImageButton imgButton4;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -47,46 +37,62 @@ public class WorkoutsFragment extends Fragment {
         imgButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), PopActivity.class);
+                String title = getString(R.string.basic_workout_1_title);
+                String description = getString(R.string.basic_workout_1_description);
+                showPopupWindow(v, title, description);
             }
         });
 
         imgButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onWorkoutButtonClick("Basic Workout 2");
+                String title = getString(R.string.basic_workout_2_title);
+                String description = getString(R.string.basic_workout_2_description);
+                showPopupWindow(v, title, description);
             }
         });
 
         imgButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onWorkoutButtonClick("Basic Workout 3");
+                String title = getString(R.string.basic_workout_3_title);
+                String description = getString(R.string.basic_workout_3_description);
+                showPopupWindow(v, title, description);
             }
         });
 
         imgButton4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onWorkoutButtonClick("Basic Workout 4");
+                String title = getString(R.string.basic_workout_4_title);
+                String description = getString(R.string.basic_workout_4_description);
+                showPopupWindow(v, title, description);
             }
         });
-
         return view;
     }
 
-    private Drawable getDrawable(int popupBg) {
-        return null;
+    private void showPopupWindow(View view, String titleText, String descriptionText) {
+        LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View popupView = inflater.inflate(R.layout.popup_design, null);
+
+        final PopupWindow popupWindow = new PopupWindow(popupView, ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT, true);
+
+        TextView titleTextView = popupView.findViewById(R.id.popupTitle);
+        titleTextView.setText(titleText);
+
+        TextView descriptionTextView = popupView.findViewById(R.id.popupDescription);
+        descriptionTextView.setText(descriptionText);
+
+        ImageButton closeButton = popupView.findViewById(R.id.close_button);
+        closeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                popupWindow.dismiss();
+            }
+        });
+
+        popupWindow.showAtLocation(view, Gravity.CENTER, 0, 0);
     }
 
-    private Context getApplicationContext() {
-        return null;
-    }
-
-    private void onWorkoutButtonClick(String workoutName) {
-        String message = workoutName + " Selected";
-        Toast.makeText(getContext(), message, Toast.LENGTH_SHORT).show();
-
-        // You can add more functionality here based on the selected workout
-    }
 }

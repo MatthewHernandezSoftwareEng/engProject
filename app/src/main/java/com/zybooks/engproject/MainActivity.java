@@ -1,12 +1,12 @@
 package com.zybooks.engproject;
 
-import android.app.FragmentManager;
 import android.os.Bundle;
 import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -20,10 +20,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        // FragmentManager fragmentManager = getFragmentManager();
-        // Fragment fragment = HomeFragment.instantiate(this,HomeFragment.class.getName());
-        // fragmentManager.beginTransaction().add(R.id.nav_home, fragment).addToBackStack(null).commit();
+
         bottomNavigationView = findViewById(R.id.bottom_navigation);
+
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.container, new HomeFragment())
+                    .commit();
+        }
+
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {

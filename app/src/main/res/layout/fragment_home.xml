@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Welcome to Your App!"
-        android:fontStyle="@font/pixelify_sans_bold"
+        android:fontFamily="@font/pixelify_sans_bold"
         android:textSize="24sp"
         android:textColor="@android:color/white"
         android:shadowColor="@color/black"
@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Go to Workouts"
-        android:fontStyle="@font/pixelify_sans_bold"
+        android:fontFamily="@font/pixelify_sans_bold"
         android:background="@color/emerald_green"
         android:layout_marginTop="16dp"/>
 

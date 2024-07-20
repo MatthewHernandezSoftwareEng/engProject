@@ -47,6 +47,9 @@ public class timer extends activityTimer {
         }
     };
     public  void runTimer(){
+        if (count == 0 || count < 0){
+            count = 5;
+        }
         min = count;
         count = count * 60;
 

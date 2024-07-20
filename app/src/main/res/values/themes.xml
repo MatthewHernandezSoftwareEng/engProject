@@ -8,6 +8,6 @@
         <item name="colorAccent">@color/emerald_green</item>
         <item name="android:windowBackground">@color/background_color</item>
         <item name="android:textColor">@android:color/white</item>
-        <item name="android:fontFamily">@font</item>
+        <item name="android:fontFamily">@font/pixelify_sans_bold</item>
     </style>
 </resources>

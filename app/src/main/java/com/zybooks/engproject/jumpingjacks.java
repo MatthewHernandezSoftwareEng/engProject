@@ -28,7 +28,7 @@ public class jumpingjacks extends AppCompatActivity {
         one.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(jumpingjacks.this, Tips_Activity.class);
+                Intent intent = new Intent(jumpingjacks.this, TipsFragment.class);
                 startActivity(intent);
             }
         });

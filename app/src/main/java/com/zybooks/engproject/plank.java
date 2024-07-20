@@ -28,7 +28,7 @@ public class plank extends AppCompatActivity {
         one.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(plank.this, Tips_Activity.class);
+                Intent intent = new Intent(plank.this, TipsFragment.class);
                 startActivity(intent);
             }
         });

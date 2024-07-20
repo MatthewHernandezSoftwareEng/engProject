@@ -27,7 +27,7 @@ public class calfraise extends AppCompatActivity {
         one.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(calfraise.this, Tips_Activity.class);
+                Intent intent = new Intent(calfraise.this, TipsFragment.class);
                 startActivity(intent);
             }
         });
